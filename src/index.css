@@ -136,7 +136,7 @@
 
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+  filter: blur(350px);
 }
 
 /* NAVBAR LINKS BORDER ANIMATION */
