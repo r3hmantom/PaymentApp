@@ -173,3 +173,18 @@
 .animateNavLink:hover::before {
   width: 100%;
 }
+
+/* Scrollbar Customization  */
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #33bbcf;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #33bacf60;
+}
