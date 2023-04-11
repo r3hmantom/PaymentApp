@@ -3,8 +3,10 @@ import { clients } from "../constants";
 import styles from "../style";
 
 const ClientSection = () => (
-  <section className={`${styles.flexCenter} my-4 `}>
-    <div className={`${styles.flexCenter} flex-wrap w-full`}>
+  <section className={`${styles.flexCenter} mt-4 mb-28 `}>
+    <div
+      className={`${styles.flexCenter}  flex-col gap-10 md:gap-1 md:flex-row w-full  `}
+    >
       {clients.map((client) => (
         <div
           key={client.id}
@@ -13,7 +15,7 @@ const ClientSection = () => (
           <img
             src={client.logo}
             alt="client"
-            className="w-[100px] sm:w-[192px] text-white object-contain cursor-pointer transition-all duration-200 hover:brightness-[3] hover:scale-110 hover:-translate-y-1"
+            className="w-[150px] md:w-[192px] text-white object-contain cursor-pointer transition-all duration-200 hover:brightness-[3] hover:scale-110 hover:-translate-y-1"
           />
         </div>
       ))}
