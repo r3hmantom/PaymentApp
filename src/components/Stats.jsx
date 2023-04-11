@@ -2,7 +2,10 @@ import React from "react";
 import { stats } from "../constants";
 import styles from "../style";
 const Stats = () => (
-  <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
+  <section
+    className={`flex justify-center flex-col flex-1 items-start
+      md:flex-row flex-wrap  my-10 `}
+  >
     {stats.map((stat, index) => (
       <div
         key={stat.id}
