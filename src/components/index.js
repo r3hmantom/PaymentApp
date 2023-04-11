@@ -8,6 +8,7 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import AnimCursor from "./AnimCursor";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Footer,
   Testimonials,
   Hero,
+  AnimCursor,
 };

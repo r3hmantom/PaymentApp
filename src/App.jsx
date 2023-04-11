@@ -11,10 +11,12 @@ import {
   Footer,
   Testimonials,
   Hero,
+  AnimCursor,
 } from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
+    <AnimCursor />
     {/* NAVBAR  */}
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
