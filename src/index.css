@@ -118,6 +118,7 @@
 
 .feedback-card {
   background: transparent;
+  cursor: pointer;
 }
 
 .feedback-card:hover {
