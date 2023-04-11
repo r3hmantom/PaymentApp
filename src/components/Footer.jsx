@@ -6,7 +6,7 @@ import { footerLinks, socialMedia } from "../constants";
 const Footer = () => (
   <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} flex-col md:flex-row mb-8 w-full`}>
-      <div className="flex-1 flex flex-col justify-start mr-10">
+      <div className="flex-1 flex flex-col justify-start mr-10 mb-14">
         <img
           src={logo}
           alt="hoobank"
