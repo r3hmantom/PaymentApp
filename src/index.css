@@ -177,14 +177,14 @@
 /* Scrollbar Customization  */
 /* Webkit-based browsers */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #33bbcf;
+  background-color: rgb(92, 225, 230);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #33bacf60;
+  background-color: black;
 }
