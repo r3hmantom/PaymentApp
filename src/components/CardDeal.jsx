@@ -5,29 +5,29 @@ import Button from "./Button";
 import { motion } from "framer-motion";
 
 const CardDeal = () => {
-  const cardVariantRight = {
+  const cardVariantLeft = {
     offscreen: {
       x: "-100vw",
     },
     onscreen: {
       x: 0,
       transition: {
-        type: "tween",
-        bounce: 0,
-        duration: 0.4,
+        type: "spring",
+        bounce: 0.2,
+        duration: 1,
       },
     },
   };
-  const cardVariantLeft = {
+  const cardVariantRight = {
     offscreen: {
       x: "100vw",
     },
     onscreen: {
       x: 0,
       transition: {
-        type: "tween",
-        bounce: 0,
-        duration: 0.4,
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
       },
     },
   };
@@ -38,7 +38,7 @@ const CardDeal = () => {
       viewport={{ once: false, amount: 0 }}
       className={layout.section}
     >
-      <motion.div variants={cardVariantRight} className={layout.sectionInfo}>
+      <motion.div variants={cardVariantLeft} className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
           Find a better card deal <br className="hidden sm:block" /> in few easy
           steps.
@@ -51,7 +51,7 @@ const CardDeal = () => {
         <Button styles="mt-10" />
       </motion.div>
 
-      <motion.div variants={cardVariantLeft} className={layout.sectionImg}>
+      <motion.div variants={cardVariantRight} className={layout.sectionImg}>
         <img src={card} alt="card" className="w-full h-full" />
       </motion.div>
     </motion.section>
