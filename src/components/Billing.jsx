@@ -1,11 +1,47 @@
 import React from "react";
 import { apple, bill, google } from "../assets/index";
 import styles, { layout } from "../style";
+import { motion } from "framer-motion";
 
 function Billing() {
+  const cardVariantLeft = {
+    offscreen: {
+      x: "-100vw",
+    },
+    onscreen: {
+      x: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
+  const cardVariantRight = {
+    offscreen: {
+      x: "100vw",
+    },
+    onscreen: {
+      x: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 1,
+      },
+    },
+  };
   return (
-    <section id="product" className={`${layout.sectionReverse}`}>
-      <div className={layout.sectionImgReverse}>
+    <motion.section
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: false, amount: 0 }}
+      id="product"
+      className={`${layout.sectionReverse}`}
+    >
+      <motion.div
+        variants={cardVariantLeft}
+        className={layout.sectionImgReverse}
+      >
         <img
           src={bill}
           alt="billing"
@@ -13,9 +49,9 @@ function Billing() {
         />
         <div className="absolute z-[3] -left-1/2 top-0 w-1/2 h-1/2 rounded-full white__gradient" />
         <div className="absolute z-[0] -left-1/2 bottom-0 w-1/2 h-1/2 rounded-full pink__gradient" />
-      </div>
+      </motion.div>
 
-      <div className={layout.sectionInfo}>
+      <motion.div variants={cardVariantRight} className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
           Easily control your <br className="hidden sm:block" /> billing &
           invoicing.
@@ -37,8 +73,8 @@ function Billing() {
             className="w-[128px] h-[42px] object-contain cursor-pointer"
           />
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 
