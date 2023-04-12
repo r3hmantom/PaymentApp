@@ -34,7 +34,7 @@ function Billing() {
     <motion.section
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: false, amount: 0 }}
+      viewport={{ once: true, amount: 0 }}
       id="product"
       className={`${layout.sectionReverse}`}
     >

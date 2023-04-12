@@ -35,7 +35,7 @@ const CardDeal = () => {
     <motion.section
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: false, amount: 0 }}
+      viewport={{ once: true, amount: 0 }}
       className={layout.section}
     >
       <motion.div variants={cardVariantLeft} className={layout.sectionInfo}>

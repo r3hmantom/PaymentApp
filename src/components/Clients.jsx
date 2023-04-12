@@ -31,7 +31,7 @@ const ClientSection = () => {
     <motion.section
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: false, amount: 0 }}
+      viewport={{ once: true, amount: 0 }}
       className={`${styles.flexCenter} mt-4 mb-28 `}
     >
       <div
