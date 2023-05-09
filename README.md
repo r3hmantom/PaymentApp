@@ -33,7 +33,7 @@ npm install
 4. Start the development server:
 
 ```
-npm start
+npm run dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the landing page.
