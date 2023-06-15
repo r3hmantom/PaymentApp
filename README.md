@@ -4,7 +4,7 @@ This is a fictional landing page for a bank called HooBank. The landing page was
 
 ## Demo
 
-You can see a live demo of the landing page [here](https://r3-paymentapp.netlify.app/).
+You can see a live demo of the landing page [here](https://r3-react-payment-app.netlify.app/).
 
 ![image](https://user-images.githubusercontent.com/96996019/236995864-05943d9b-6cdb-46a9-b9c8-4d30fa2d4db4.png)
 
